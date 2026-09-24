@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia La Rompemos - Domina la Creación de Webs con Inteligencia Artificial</title>
+  <meta name="description" content="Aprende a crear sitios web profesionales, landing pages y flyers de alto impacto utilizando Inteligencia Artificial. Construye tu propia agencia y factura de $600 a $3,000 USD/mes.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://larompemos.com/wp-content/uploads/2026/05/Diseno-sin-titulo-19.png">
+
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Ambient Glow -->
+  <div class="bg-glow-top"></div>
+
+  <!-- Header Minimalista: Logo a la izquierda, Selector de Divisa y Botón Acceder a la derecha -->
+  <header class="navbar-clean">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="index.html" title="La Rompemos Academia">
+          <img src="https://larompemos.com/wp-content/uploads/2026/05/Diseno-sin-titulo-19.png" alt="La Rompemos Logo" class="brand-logo-img">
+        </a>
+      </div>
+
+      <div class="nav-right-actions">
+        <!-- Selector flotante de divisa -->
+        <div class="currency-selector-wrapper">
+          <button type="button" class="btn-currency-selector" title="Cambiar país y divisa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span class="currency-selected-label">USD $</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="currency-dropdown-menu">
+            <!-- Rellenado dinámicamente con JavaScript -->
+          </div>
+        </div>
+
+        <!-- Botón de Acceder / Iniciar Sesión -->
+        <button type="button" class="btn-login-nav open-login-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" y1="12" x2="3" y2="12"></line>
+          </svg>
+          <span class="login-text">Iniciar sesión</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section">
+      <!-- Cuadrado / Contenedor para colocar el Video Principal -->
+      <div class="video-hero-card" id="heroVideoContainer" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1">
+        <div class="video-hero-placeholder" id="heroVideoPlaceholder">
+          <div class="video-play-btn">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </div>
+          <button type="button" class="video-sound-badge" id="activateSoundBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            <span>Activar sonido</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Título Llamativo -->
+      <h1 class="hero-title font-impact">
+        EL SISTEMA COMPLETO PARA DOMINAR LA CREACIÓN DE SITIOS WEB CON INTELIGENCIA ARTIFICIAL
+      </h1>
+
+      <!-- Subtítulo Explicativo -->
+      <p class="hero-subtitle">
+        Aprende a diseñar y programar páginas web de alto impacto, landing pages que convierten y flyers publicitarios utilizando Inteligencia Artificial. Construye tu propia agencia y factura de <strong class="text-gold">$600 a $3,000 USD al mes</strong> sin experiencia previa.
+      </p>
+
+      <!-- Botón de Llamada a la Acción Principal -->
+      <a href="#planes" class="btn-cta-gold">
+        <span>CONSTRUIR MI AGENCIA</span>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+
+      <!-- Barra de Métricas y Prueba Social -->
+      <div class="proof-badges-bar">
+        <span>+600 ALUMNOS ACTIVOS</span>
+        <span class="proof-separator">•</span>
+        <span class="text-emerald-bright">$600 - $3,000 USD / MES</span>
+        <span class="proof-separator">•</span>
+        <span>100% CON INTELIGENCIA ARTIFICIAL</span>
+      </div>
+    </section>
+
+    <!-- CINTA DE BUCLE INFINITO #1 (DORADA) -->
+    <div class="marquee-ribbon marquee-gold">
+      <div class="marquee-track">
+        <div class="marquee-item"><span>⚡ CREACIÓN DE SITIOS WEB CON IA</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>FACTURA DE $600 A $3,000 USD/MES</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>LANDING PAGES DE ALTA CONVERSIÓN</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>CREACIÓN DE FLYERS CON IA</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>ESCALA TU PROPIA AGENCIA DIGITAL</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>BANCO MAESTRO DE PROMPTS</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>MÓDULO DE VENTAS Y CIERRE DE CLIENTES</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>+600 ALUMNOS FACTURANDO</span> <span class="marquee-dot">◆</span></div>
+        <!-- Duplicado exacto para bucle infinito continuo -->
+        <div class="marquee-item"><span>⚡ CREACIÓN DE SITIOS WEB CON IA</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>FACTURA DE $600 A $3,000 USD/MES</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>LANDING PAGES DE ALTA CONVERSIÓN</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>CREACIÓN DE FLYERS CON IA</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>ESCALA TU PROPIA AGENCIA DIGITAL</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>BANCO MAESTRO DE PROMPTS</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>MÓDULO DE VENTAS Y CIERRE DE CLIENTES</span> <span class="marquee-dot">◆</span></div>
+        <div class="marquee-item"><span>+600 ALUMNOS FACTURANDO</span> <span class="marquee-dot">◆</span></div>
+      </div>
+    </div>
+
+    <!-- Esquema de Negocio: Ganar entre $600 a $3,000 al mes -->
+    <section class="section-wrapper">
+      <div class="revenue-card">
+        <span class="section-tag-gold">— ESQUEMA DE FACTURACIÓN REAL —</span>
+        <h2 class="font-impact" style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin-top: 10px;">
+          ¿CUÁNTO PUEDES GENERAR AL MES VENDIENDO SITIOS WEB HECHOS CON IA?
+        </h2>
+        <div class="revenue-numbers" id="landingRevenueDisplay">
+          $600 a $3,000 USD
+        </div>
+        <p style="color: #d1d5db; max-width: 760px; margin: 0 auto; font-size: 1.05rem;">
+          Con la Inteligencia Artificial puedes crear en <strong>solo 2 a 4 horas</strong> un sitio web o landing page que normalmente tardaría 3 semanas. Cobrando entre <strong class="text-gold">$200 y $600 USD por proyecto</strong>, solo necesitas de 3 a 5 clientes mensuales para superar los <strong>$2,000 USD recurrentes</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección: ¿Quieres crear webs así? (Recuadros para videos o demostraciones) -->
+    <section class="section-wrapper">
+      <div class="section-header-center">
+        <span class="section-tag-gold">— PORTAFOLIO DE ALTO NIVEL —</span>
+        <h2 class="section-headline font-impact">¿QUIERES CREAR WEBS ASÍ?</h2>
+        <p class="text-muted" style="margin-top: 10px; font-size: 1.05rem;">
+          Sitios web modernos, ultrarrápidos y optimizados para ventas. Espacios listos para colocar tus videos demostrativos.
+        </p>
+      </div>
+
+      <div class="web-showcase-grid">
+        <!-- Recuadro 1 -->
+        <div class="web-showcase-card">
+          <div class="showcase-video-box" id="showcaseVideoBox1">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Landing Page IA">
+            <div class="showcase-placeholder-overlay">
+              <span class="text-gold" style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">[ ESPACIO PARA TU VIDEO #1 ]</span>
+              <p style="font-size: 0.82rem; color: #e4e4e7; margin-top: 4px;">Pega aquí la URL de tu video demostrativo de Landing Page</p>
+            </div>
+          </div>
+          <div class="showcase-content">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span class="bento-badge-tag emerald" style="margin-bottom: 0;">Landing Page IA</span>
+              <span class="text-gold" style="font-weight: 700; font-size: 0.9rem;">Valor venta: $400 USD</span>
+            </div>
+            <h3 class="showcase-title">Landing de Conversión Directa</h3>
+            <p class="showcase-desc">Estructurada para lanzamientos, marcas personales y productos digitales de alta gama.</p>
+          </div>
+        </div>
+
+        <!-- Recuadro 2 -->
+        <div class="web-showcase-card">
+          <div class="showcase-video-box" id="showcaseVideoBox2">
+            <img src="https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=600&q=80" alt="E-commerce IA">
+            <div class="showcase-placeholder-overlay">
+              <span class="text-gold" style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">[ ESPACIO PARA TU VIDEO #2 ]</span>
+              <p style="font-size: 0.82rem; color: #e4e4e7; margin-top: 4px;">Pega aquí la URL de tu video demostrativo de Tienda Online</p>
+            </div>
+          </div>
+          <div class="showcase-content">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span class="bento-badge-tag gold" style="margin-bottom: 0;">Tienda Online IA</span>
+              <span class="text-gold" style="font-weight: 700; font-size: 0.9rem;">Valor venta: $750 USD</span>
+            </div>
+            <h3 class="showcase-title">E-Commerce Moderno & Checkout</h3>
+            <p class="showcase-desc">Catálogo inteligente, carga instantánea y pasarelas de pago listas para vender.</p>
+          </div>
+        </div>
+
+        <!-- Recuadro 3 -->
+        <div class="web-showcase-card" id="showcaseVideoBox3">
+          <div class="showcase-video-box">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Web Corporativa">
+            <div class="showcase-placeholder-overlay">
+              <span class="text-gold" style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">[ ESPACIO PARA TU VIDEO #3 ]</span>
+              <p style="font-size: 0.82rem; color: #e4e4e7; margin-top: 4px;">Pega aquí la URL de tu video demostrativo de Web Corporativa</p>
+            </div>
+          </div>
+          <div class="showcase-content">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span class="bento-badge-tag emerald" style="margin-bottom: 0;">Corporativo IA</span>
+              <span class="text-gold" style="font-weight: 700; font-size: 0.9rem;">Valor venta: $950 USD</span>
+            </div>
+            <h3 class="showcase-title">Sitio Corporativo & Servicios</h3>
+            <p class="showcase-desc">Diseñado para negocios y empresas que buscan posicionamiento de autoridad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lo que incluye el curso: REDISEÑO BENTO HIGH-TECH -->
+    <section class="section-wrapper">
+      <div class="section-header-center">
+        <span class="section-tag-gold">— EL MAPA MAESTRO —</span>
+        <h2 class="section-headline font-impact">LO QUE DOMINARÁS DENTRO DE LA ACADEMIA</h2>
+        <p class="text-muted" style="margin-top: 10px; max-width: 680px; margin-left: auto; margin-right: auto;">
+          Metodología práctica paso a paso para pasar de principiante absoluto a dueño de una agencia rentable.
+        </p>
+      </div>
+
+      <div class="curriculum-bento-grid">
+        <!-- Tarjeta 1 (Bento Span 8 - Core Web) -->
+        <div class="bento-card col-8">
+          <div class="bento-card-glow"></div>
+          <div class="bento-num-watermark">01</div>
+          <div>
+            <span class="bento-badge-tag gold">★ NÚCLEO TÉCNICO & FRONTEND</span>
+            <h3 class="bento-title">Creación de Sitios Web y Landing Pages con Inteligencia Artificial</h3>
+            <p class="bento-desc">
+              Domina la creación de páginas web completas, tiendas online y landing pages de 7 cifras sin lidiar con bloqueos técnicos. Aprenderás a orquestar la IA para que escriba código limpio (HTML5, TailwindCSS, JavaScript moderno), maquetando sitios responsivos y listos para publicar en cuestión de minutos.
+            </p>
+          </div>
+          <div class="bento-tags-list">
+            <span class="bento-mini-pill">Landing Pages de Conversión</span>
+            <span class="bento-mini-pill">E-Commerce & Catálogos</span>
+            <span class="bento-mini-pill">Tailwind CSS & Animaciones</span>
+            <span class="bento-mini-pill">Optimización Móvil 100%</span>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 (Bento Span 4 - Visual Flyers) -->
+        <div class="bento-card col-4 highlight-emerald-border">
+          <div class="bento-card-glow emerald"></div>
+          <div class="bento-num-watermark">02</div>
+          <div>
+            <span class="bento-badge-tag emerald">★ DISEÑO VISUAL</span>
+            <h3 class="bento-title">Fábrica de Flyers & Creativos con IA</h3>
+            <p class="bento-desc">
+              Genera afiches publicitarios de nivel cinematográfico para redes sociales (Instagram, Facebook Ads, TikTok) y branding empresarial con herramientas de generación visual de última generación.
+            </p>
+          </div>
+          <div class="bento-tags-list">
+            <span class="bento-mini-pill">Midjourney & Flux</span>
+            <span class="bento-mini-pill">Flyers Comerciales</span>
+            <span class="bento-mini-pill">Anuncios de Alto CTR</span>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 (Bento Span 4 - Agencia) -->
+        <div class="bento-card col-4">
+          <div class="bento-card-glow"></div>
+          <div class="bento-num-watermark">03</div>
+          <div>
+            <span class="bento-badge-tag gold">★ NEGOCIO & ESCALABILIDAD</span>
+            <h3 class="bento-title">Monta y Escala tu Propia Agencia</h3>
+            <p class="bento-desc">
+              Deja de cobrar por horas y aprende a estructurar un negocio digital sólido. Paquetes de servicios recurrentes, plantillas de contratos y métodos para entregar en 48 horas sin estrés.
+            </p>
+          </div>
+          <div class="bento-tags-list">
+            <span class="bento-mini-pill">Contratos Legales</span>
+            <span class="bento-mini-pill">Modelos de Suscripción</span>
+            <span class="bento-mini-pill">Entrega Rápida</span>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 (Bento Span 8 - Ventas & Cierre) -->
+        <div class="bento-card col-8 highlight-emerald-border">
+          <div class="bento-card-glow emerald"></div>
+          <div class="bento-num-watermark">04</div>
+          <div>
+            <span class="bento-badge-tag emerald">★ MÓDULO DE VENTAS & CLIENTES</span>
+            <h3 class="bento-title">Cómo Conseguir Clientes y Cobrar de $600 a $3,000 USD</h3>
+            <p class="bento-desc">
+              Saber crear webs no sirve de nada si no sabes venderlas. Te entregamos nuestro método probado de prospección en frío por WhatsApp, Instagram y correo, junto con los guiones de negociación y cotizaciones que cierran tratos sin regalar tu trabajo.
+            </p>
+          </div>
+          <div class="bento-tags-list">
+            <span class="bento-mini-pill">Guiones de Prospección en Frío</span>
+            <span class="bento-mini-pill">Cierre de Tratos High-Ticket</span>
+            <span class="bento-mini-pill">Cobro Internacional (Stripe / PayPal / Cripto)</span>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5 (Bento Span 6 - Prompts Maestros) -->
+        <div class="bento-card col-6">
+          <div class="bento-card-glow"></div>
+          <div class="bento-num-watermark">05</div>
+          <div>
+            <span class="bento-badge-tag gold">★ ARSENAL DE PROMPTS</span>
+            <h3 class="bento-title">Banco Interactivo de Prompts Maestros</h3>
+            <p class="bento-desc">
+              Acceso a nuestra biblioteca privada con prompts listos para copiar con 1 solo clic. Instrucciones calibradas para crear componentes, layouts, paletas luxury y microanimaciones sin prueba y error.
+            </p>
+          </div>
+          <div class="bento-tags-list">
+            <span class="bento-mini-pill">Copiar en 1 Clic</span>
+            <span class="bento-mini-pill">Actualizaciones Continuas</span>
+          </div>
+        </div>
+
+        <!-- Tarjeta 6 (Bento Span 6 - Comunidad & Bolsa) -->
+        <div class="bento-card col-6 highlight-emerald-border">
+          <div class="bento-card-glow emerald"></div>
+          <div class="bento-num-watermark">06</div>
+          <div>
+            <span class="bento-badge-tag emerald">★ COMUNIDAD & BOLSA LABORAL</span>
+            <h3 class="bento-title">Comunidad Privada & Oportunidades Reales</h3>
+            <p class="bento-desc">
+              Únete a un grupo selecto de creadores que están cerrando proyectos diariamente. Compartimos ofertas de trabajo reales, resolvemos dudas en vivo y hacemos revisiones de proyectos.
+            </p>
+          </div>
+          <div class="bento-tags-list">
+            <span class="bento-mini-pill">Networking Directo</span>
+            <span class="bento-mini-pill">Bolsa de Proyectos</span>
+            <span class="bento-mini-pill">Soporte Continuo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios de Alumnos -->
+    <section class="section-wrapper">
+      <div class="section-header-center">
+        <span class="section-tag-gold">— PRUEBA SOCIAL REAL —</span>
+        <h2 class="section-headline font-impact">+600 ALUMNOS GENERANDO INGRESOS REALES</h2>
+        <p class="text-muted" style="margin-top: 10px;">
+          Historias de miembros que empezaron desde cero y hoy facturan entre $600 y $3,000 USD al mes.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonio 1 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"En mi segunda semana utilizando los prompts de landing pages logré cerrar mi primer cliente de bienes raíces por $850 USD. La estructura de venta es infalible."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">CM</div>
+            <div class="author-info">
+              <h4>Carlos Mendoza</h4>
+              <p>Santiago, Chile • Factura $2,100 USD/mes</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"No sabía programar ni una sola línea de código. Con el método de IA de La Rompemos creo sitios web en 3 horas que mis clientes adoran."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">VR</div>
+            <div class="author-info">
+              <h4>Valentina Restrepo</h4>
+              <p>Medellín, Colombia • Factura $1,800 USD/mes</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"El banco de prompts para flyers y webs ahorra semanas enteras de trabajo. Recuperé mi inversión en las primeras 48 horas tras entrar al programa."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">AM</div>
+            <div class="author-info">
+              <h4>Alejandro Morales</h4>
+              <p>CDMX, México • Factura $3,200 USD/mes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CINTA DE BUCLE INFINITO #2 (DARK LUXURY & ESMERALDA) -->
+    <div class="marquee-ribbon marquee-dark marquee-reverse" style="margin-top: 50px;">
+      <div class="marquee-track">
+        <div class="marquee-item"><span>🚀 CONVIÉRTETE EN CREADOR WEB IA</span> <span class="marquee-dot emerald">●</span></div>
+        <div class="marquee-item"><span class="text-gold">ENTREGA PROYECTOS EN HORAS NO EN SEMANAS</span> <span class="marquee-dot gold">●</span></div>
+        <div class="marquee-item"><span>COMUNIDAD VIP & NETWORKING</span> <span class="marquee-dot emerald">●</span></div>
+        <div class="marquee-item"><span class="text-gold">BOLSA DE OPORTUNIDADES REALES</span> <span class="marquee-dot gold">●</span></div>
+        <div class="marquee-item"><span>SOPORTE DIRECTO DE LA ROMPEMOS</span> <span class="marquee-dot emerald">●</span></div>
+        <!-- Duplicado para loop infinito perfecto -->
+        <div class="marquee-item"><span>🚀 CONVIÉRTETE EN CREADOR WEB IA</span> <span class="marquee-dot emerald">●</span></div>
+        <div class="marquee-item"><span class="text-gold">ENTREGA PROYECTOS EN HORAS NO EN SEMANAS</span> <span class="marquee-dot gold">●</span></div>
+        <div class="marquee-item"><span>COMUNIDAD VIP & NETWORKING</span> <span class="marquee-dot emerald">●</span></div>
+        <div class="marquee-item"><span class="text-gold">BOLSA DE OPORTUNIDADES REALES</span> <span class="marquee-dot gold">●</span></div>
+        <div class="marquee-item"><span>SOPORTE DIRECTO DE LA ROMPEMOS</span> <span class="marquee-dot emerald">●</span></div>
+      </div>
+    </div>
+
+    <!-- Sección de Precios y Planes ($50, $89, $140) -->
+    <section class="section-wrapper" id="planes">
+      <div class="section-header-center">
+        <span class="section-tag-gold">— SELECCIONA TU NIVEL DE ACCESO —</span>
+        <h2 class="section-headline font-impact">TRES FORMAS DE ENTRAR. UNA SOLA META.</h2>
+        <p class="text-muted" style="margin-top: 10px;">
+          Precios expresados en tu moneda local. Elige el plan que mejor se adapte a tu meta de crecimiento.
+        </p>
+      </div>
+
+      <!-- Selector de divisa en la sección de precios -->
+      <div class="pricing-currency-picker">
+        <div class="currency-selector-wrapper">
+          <button type="button" class="btn-currency-selector" title="Cambiar país y moneda">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span class="currency-selected-label">USD $</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="currency-dropdown-menu"></div>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- PLAN 1: $50 USD -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-name">★ INICIAL WEB ★</div>
+            <div class="plan-price-val" data-price-usd="50" id="planPrice1Display">$50 USD</div>
+            <div class="plan-price-period">Acceso Completo Inicial</div>
+          </div>
+
+          <ul class="plan-features-list">
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span><strong>Curso Completo de Creación Web con IA</strong></span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Módulo de Creación de Landing Pages</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Creación de Flyers con IA para Redes</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Banco Básico de Prompts para Webs</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Acceso a la plataforma de aprendizaje</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Actualizaciones durante 6 meses</span>
+            </li>
+          </ul>
+
+          <a href="#" class="btn-plan-action btn-outline open-login-btn">
+            ENTRAR • PLAN $50
+          </a>
+        </div>
+
+        <!-- PLAN 2: $89 USD (ENTERO DORADO CON BOTÓN NEGRO) -->
+        <div class="pricing-card full-gold-card">
+          <div class="pricing-top-badge">◆ MEJOR VALOR ◆</div>
+          <div class="plan-header">
+            <div class="plan-name">★ MAESTRO WEB IA ★</div>
+            <div class="plan-price-val" data-price-usd="89" id="planPrice2Display">$89 USD</div>
+            <div class="plan-price-period">El programa más elegido</div>
+          </div>
+
+          <ul class="plan-features-list">
+            <li class="plan-feature-item highlight-gold">
+              <span class="plan-feature-bullet gold">►</span>
+              <span><strong>Todo lo del Plan Inicial Incluido</strong></span>
+            </li>
+            <li class="plan-feature-item highlight-emerald">
+              <span class="plan-feature-bullet emerald">►</span>
+              <span><strong>Módulo Exclusivo: Creación y Escalamiento de tu Agencia</strong></span>
+            </li>
+            <li class="plan-feature-item highlight-emerald">
+              <span class="plan-feature-bullet emerald">►</span>
+              <span><strong>Módulo Completo de Ventas & Cierre de Clientes</strong></span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Banco Avanzado de Prompts para Webs y E-commerce</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Colección VIP de Prompts para Flyers Publicitarios</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Comunidad Privada de Discord / Telegram</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Plantillas de Contratos y Cotizaciones</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Acceso durante 1 año completo</span>
+            </li>
+          </ul>
+
+          <!-- Botón Negro de Alto Contraste -->
+          <a href="#" class="btn-plan-action btn-plan-black open-login-btn">
+            ENTRAR • PLAN $89
+          </a>
+        </div>
+
+        <!-- PLAN 3: $140 USD (Vitalicio / Agencia Pro) -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-name">★ VITALICIO AGENCIA PRO ★</div>
+            <div class="plan-price-val" data-price-usd="140">$140 USD</div>
+            <div class="plan-price-period">Pago Único • Acceso de por Vida</div>
+          </div>
+
+          <ul class="plan-features-list">
+            <li class="plan-feature-item highlight-gold">
+              <span class="plan-feature-bullet gold">►</span>
+              <span><strong>Acceso Vitalicio de por Vida sin mensualidades</strong></span>
+            </li>
+            <li class="plan-feature-item highlight-emerald">
+              <span class="plan-feature-bullet emerald">►</span>
+              <span><strong>Acceso a la Bolsa Exclusiva de Clientes y Oportunidades</strong></span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Módulo Avanzado de Automatización con IA</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Banco Ilimitado de Prompts con actualizaciones continuas</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Sesiones grupales de preguntas y respuestas mensuales</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Revisión personalizada de tu primera web por el equipo</span>
+            </li>
+            <li class="plan-feature-item">
+              <span class="plan-feature-bullet gold">►</span>
+              <span>Certificado de Acreditación de Agencia Web IA</span>
+            </li>
+          </ul>
+
+          <a href="#" class="btn-plan-action btn-silver open-login-btn">
+            ASEGURAR VITALICIO • $140
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas Frecuentes (FAQ) estilo acordeón idéntico al screenshot -->
+    <section class="section-wrapper">
+      <div class="section-header-center">
+        <h2 class="section-headline font-impact">PREGUNTAS QUE TE ESTÁS HACIENDO.</h2>
+        <p class="text-muted" style="margin-top: 10px;">
+          Todo lo que necesitas saber antes de dar el paso definitivo.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">¿NECESITO EXPERIENCIA PREVIA EN PROGRAMACIÓN O DISEÑO?</h3>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              No, absolutamente ninguna. Todo el método está pensado para personas sin conocimientos técnicos. La Inteligencia Artificial se encarga de la parte compleja del código y nosotros te enseñamos a dirigirla paso a paso con los prompts exactos.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">¿CUÁNTO TIEMPO TARDO EN VER INGRESOS?</h3>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              La mayoría de nuestros alumnos logran crear sus primeras maquetas profesionales en las primeras 48 horas. Con el módulo de ventas y prospección, alumnos dedicados consiguen su primer cliente pagado entre la segunda y cuarta semana.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">¿QUÉ TIPO DE WEBS APRENDERÉ A CREAR?</h3>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              Aprenderás a crear landing pages de alta conversión, sitios corporativos para empresas, tiendas online (e-commerce), portafolios interactivos y sistemas web modernos optimizados para dispositivos móviles.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">¿QUÉ HERRAMIENTAS DE IA UTILIZAREMOS?</h3>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              Utilizamos los modelos de IA más avanzados del momento para desarrollo web y generación visual (ChatGPT, Claude, Cursor, v0, Midjourney, Flux y herramientas especializadas de creación rápida).
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">¿QUÉ DIFERENCIA HAY ENTRE LOS PLANES DE $50, $89 Y $140?</h3>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              El plan de $50 USD te da los fundamentos esenciales de creación de webs y flyers. El plan de $89 USD incluye el módulo completo de cómo armar tu agencia, el sistema de ventas para captar clientes y la comunidad privada. El plan de $140 USD es de pago único vitalicio e incluye la bolsa de clientes y soporte prioritario de por vida.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">¿CÓMO ACCEDO AL CURSO Y A LOS PROMPTS DESPUÉS DE COMPRAR?</h3>
+            <span class="faq-toggle-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              El acceso es inmediato y automático a través del subdominio <strong>academia.larompemos.com</strong>. Podrás ingresar con tu correo electrónico y disfrutar de todos los módulos, el banco interactivo de prompts y la comunidad.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Banner CTA -->
+    <section class="bottom-cta-banner">
+      <h2 class="font-impact">EL JUEGO YA EMPEZÓ.</h2>
+      <p style="color: #A1A1AA; max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem;">
+        No te quedes atrás. La creación de sitios web con Inteligencia Artificial es la habilidad con mayor demanda comercial de esta década.
+      </p>
+      <a href="#planes" class="btn-cta-gold">
+        <span>ACCEDER A LA ACADEMIA AHORA</span>
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer Pequeño y Profesional -->
+  <footer class="footer-clean">
+    <div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 14px;">
+      <img src="https://larompemos.com/wp-content/uploads/2026/05/Diseno-sin-titulo-19.png" alt="La Rompemos" style="height: 32px; opacity: 0.85;">
+      <p>© 2026 Academia La Rompemos • <a href="https://larompemos.com" target="_blank">larompemos.com</a> • Todos los derechos reservados.</p>
+      <p style="color: #52525b; font-size: 0.75rem;">Desarrollado para el subdominio academia.larompemos.com</p>
+    </div>
+  </footer>
+
+  <!-- Modal de Acceso / Iniciar Sesión -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-content">
+      <button type="button" class="modal-close-btn" id="closeLoginBtn">×</button>
+      
+      <div style="text-align: center; margin-bottom: 22px;">
+        <img src="https://larompemos.com/wp-content/uploads/2026/05/Diseno-sin-titulo-19.png" alt="La Rompemos" style="height: 38px; margin-bottom: 12px;">
+        <h3 class="font-impact" style="font-size: 1.6rem; letter-spacing: 0.05em;">ACCEDER A LA ACADEMIA</h3>
+        <p style="font-size: 0.85rem; color: #a1a1aa;">Ingresa tus credenciales para acceder al aula virtual y al panel de administración.</p>
+      </div>
+
+      <div id="loginAlert" style="display: none; padding: 10px 14px; border-radius: 8px; font-size: 0.85rem; margin-bottom: 16px; text-align: center;"></div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label class="form-label" for="loginEmail">Correo Electrónico</label>
+          <input type="email" id="loginEmail" class="form-input" placeholder="correo@ejemplo.com" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="loginPassword">Contraseña</label>
+          <input type="password" id="loginPassword" class="form-input" placeholder="Tu contraseña secreta" required autocomplete="current-password">
+        </div>
+
+        <button type="submit" class="btn-form-submit">ENTRAR AL SISTEMA</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/store.js"></script>
+  <script src="js/currency.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
